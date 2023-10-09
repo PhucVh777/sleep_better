@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SleepBetter</string>
+    <string name="text_sleep">Sleep</string>
+    <string name="text_statistic">Statistic</string>
+    <string name="text_sounds">Sounds</string>
+    <string name="text_setting">Setting</string>
 </resources>
