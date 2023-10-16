@@ -24,6 +24,15 @@
         <activity
             android:name=".ui.home.HomeActivity"
             android:exported="true" />
+        <activity
+            android:name=".ui.breathing.BreathingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.breathing.ChooseTimeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.breathing.BreathingExcerciseActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -4,4 +4,22 @@
     <string name="text_statistic">Statistic</string>
     <string name="text_sounds">Sounds</string>
     <string name="text_setting">Setting</string>
+    <string name="text_factors">Factors</string>
+    <string name="text_sleep_ritual">Sleep Ritual</string>
+    <string name="text_breathing">Breathing</string>
+    <string name="text_choose_time">Choose time</string>
+    <string name="text_title_sleep">sleep is the best \nmeditation</string>
+    <string name="text_deep_breathing">Deep Breathing</string>
+    <string name="text_deep_breathing_des">Good for your sleep</string>
+    <string name="text_calm_breathing">Calming breathing</string>
+    <string name="text_calm_breathing_des">Helps you feel calmer</string>
+    <string name="text_snoring_breathing">Snoring Reduce Breathing</string>
+    <string name="text_snoring_breathing_des">Reduce your snoring</string>
+    <string name="text_next">Next</string>
+    <string name="text_done">Done</string>
+    <string name="text_choose_time_des">Choose time you want to do this excercise</string>
+    <string name="text_one_min">1 min</string>
+    <string name="text_two_min">2 min</string>
+    <string name="text_three_min">3 min</string>
+    <string name="text_four_min">4 min</string>
 </resources>

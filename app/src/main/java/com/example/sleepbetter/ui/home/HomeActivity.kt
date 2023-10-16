@@ -4,6 +4,10 @@ import androidx.fragment.app.Fragment
 import com.example.sleepbetter.R
 import com.example.sleepbetter.base.BaseActivity
 import com.example.sleepbetter.databinding.ActivityHomeBinding
+import com.example.sleepbetter.ui.setting.SettingFragment
+import com.example.sleepbetter.ui.sound.SoundsFragment
+
+import com.example.sleepbetter.ui.statistic.StatisticFragment
 
 class HomeActivity : BaseActivity<ActivityHomeBinding>() {
     override fun getContentView(): Int = R.layout.activity_home

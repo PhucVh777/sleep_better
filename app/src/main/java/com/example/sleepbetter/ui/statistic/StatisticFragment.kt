@@ -1,4 +1,4 @@
-package com.example.sleepbetter.ui.home
+package com.example.sleepbetter.ui.statistic
 
 import android.os.Bundle
 import android.view.View
@@ -8,6 +8,9 @@ import com.example.sleepbetter.databinding.FragmentStatisticBinding
 
 class StatisticFragment : BaseFragment<FragmentStatisticBinding>() {
     override fun getLayout(): Int = R.layout.fragment_statistic
+    override fun initView() {
+
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

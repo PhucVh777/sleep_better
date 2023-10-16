@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -7,7 +8,127 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background_home">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_40dp"
+                    android:text="@string/text_title_sleep"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_32dp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/btn_home_sounds"
+                    android:layout_width="@dimen/_104dp"
+                    android:layout_height="@dimen/_104dp"
+                    android:layout_marginLeft="@dimen/_31dp"
+                    android:layout_marginTop="@dimen/_190dp"
+                    android:background="@drawable/bg_btn_home_factors"
+                    android:orientation="vertical"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintRight_toLeftOf="@id/btn_home_factors"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/ic_home_sounds" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:text="@string/text_sounds"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_home_factors"
+                    android:layout_width="@dimen/_104dp"
+                    android:layout_height="@dimen/_104dp"
+                    android:background="@drawable/bg_btn_home_factors"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_home_sounds"
+                    app:layout_constraintLeft_toRightOf="@id/btn_home_sounds"
+                    app:layout_constraintRight_toLeftOf="@id/btn_home_sleep_ritual"
+                    app:layout_constraintTop_toTopOf="@id/btn_home_sounds">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/ic_home_factors" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:text="@string/text_factors"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_home_sleep_ritual"
+                    android:layout_width="@dimen/_104dp"
+                    android:layout_height="@dimen/_104dp"
+                    android:layout_marginRight="@dimen/_31dp"
+                    android:background="@drawable/bg_btn_home_factors"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/btn_home_sounds"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/btn_home_factors"
+                    app:layout_constraintTop_toTopOf="@id/btn_home_sounds">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/ic_home_sounds" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:text="@string/text_sleep_ritual"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_pager_sleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40dp"
+                    android:paddingStart="@dimen/_40dp"
+                    android:paddingEnd="@dimen/_40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_home_sleep_ritual" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
