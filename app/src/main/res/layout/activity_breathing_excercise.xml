@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -7,7 +8,159 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background_all">
 
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_marginLeft="@dimen/_25dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:background="@drawable/arrow_left"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_breathing"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toBottomOf="@id/btn_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+        <LinearLayout
+            android:id="@+id/ln_hale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_36dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <TextView
+                android:id="@+id/tv_inhale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_inhale"
+                android:textColor="@color/white"
+                android:textSize="@dimen/inhale_text_size" />
+
+            <ImageView
+                android:id="@+id/img_arrow_hold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:background="@drawable/breath_arrow_right"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_hold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:text="@string/text_hold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/inhale_text_size"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:background="@drawable/breath_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_exhale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:text="@string/text_exhale"
+                android:textColor="@color/white"
+                android:textSize="@dimen/inhale_text_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_breathing_gif"
+            android:layout_width="335dp"
+            android:layout_height="335dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ln_hale" />
+
+        <TextView
+            android:id="@+id/tv_breathing_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:text="@string/text_exhale"
+            android:textColor="@color/white"
+            android:textSize="@dimen/inhale_count_size"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_breathing_gif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_breathing_des"
+            android:textColor="@color/white"
+            android:textSize="@dimen/inhale_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_breathing_type" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_timer"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42dp"
+            android:layout_marginHorizontal="@dimen/_18dp"
+            android:layout_marginBottom="@dimen/_21dp"
+            android:progressDrawable="@drawable/bg_breathing_progress_bar"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/btn_start_pause_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/progress_bar_timer"
+            app:layout_constraintLeft_toLeftOf="@id/progress_bar_timer"
+            app:layout_constraintRight_toRightOf="@id/progress_bar_timer"
+            app:layout_constraintTop_toTopOf="@id/progress_bar_timer">
+
+            <TextView
+                android:id="@+id/tv_status_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/text_breathing_stop"
+                android:textColor="@color/white"
+                android:textSize="@dimen/stopbreath_size" />
+
+            <TextView
+                android:id="@+id/tv_coundown"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:fontFamily="monospace"
+                android:text="00:00"
+                android:textSize="@dimen/stopbreath_size"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/ln_hale"
+            app:layout_constraintLeft_toLeftOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

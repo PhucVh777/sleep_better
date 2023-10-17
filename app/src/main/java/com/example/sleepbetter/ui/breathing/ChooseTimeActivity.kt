@@ -39,6 +39,9 @@ class ChooseTimeActivity : BaseActivity<ActivityChooseTimeBinding>() {
             intent.putExtras(bundle)
             startActivity(intent)
         }
+        mDataBinding.btnBack.setOnClickListener{
+            finish()
+        }
     }
 
     private fun setChooseTime(position: Int) {

@@ -22,4 +22,10 @@
     <string name="text_two_min">2 min</string>
     <string name="text_three_min">3 min</string>
     <string name="text_four_min">4 min</string>
+    <string name="text_inhale">inhale</string>
+    <string name="text_hold">hold</string>
+    <string name="text_exhale">exhale</string>
+    <string name="text_breathing_des">Inhale with your tongue out, exhale with your tonge in</string>
+    <string name="text_breathing_stop">Tap to stop</string>
+    <string name="text_breathing_start">Tap to start</string>
 </resources>

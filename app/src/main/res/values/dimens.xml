@@ -204,4 +204,7 @@
     <dimen name="_202dp">202dp</dimen>
     <dimen name="_203dp">203dp</dimen>
     <dimen name="_204dp">204dp</dimen>
+    <dimen name="inhale_text_size">14sp</dimen>
+    <dimen name="inhale_count_size">22sp</dimen>
+    <dimen name="stopbreath_size">15sp</dimen>
 </resources>

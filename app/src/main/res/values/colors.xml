@@ -8,4 +8,5 @@
     <color name="color_button_next_breathing">#9288F8</color>
     <color name="color_btn_breathing_unchecked">#666682</color>
     <color name="color_button_choose_time_unselect">#3A367F</color>
+    <color name="color_bg_progressbar">#3A367F</color>
 </resources>
