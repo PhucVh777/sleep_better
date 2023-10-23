@@ -17,6 +17,8 @@
     <string name="text_snoring_breathing_des">Reduce your snoring</string>
     <string name="text_next">Next</string>
     <string name="text_done">Done</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_yes">Yes</string>
     <string name="text_choose_time_des">Choose time you want to do this excercise</string>
     <string name="text_one_min">1 min</string>
     <string name="text_two_min">2 min</string>
@@ -28,4 +30,18 @@
     <string name="text_breathing_des">Inhale with your tongue out, exhale with your tonge in</string>
     <string name="text_breathing_stop">Tap to stop</string>
     <string name="text_breathing_start">Tap to start</string>
+    <string name="text_ops">Oppss....</string>
+    <string name="text_congratulations">Congratulations</string>
+    <string name="text_ops_dialog_content">Are you sure you want to exit without \ncompleting the breathing exercise?</string>
+    <string name="text_congratulation_dialog_content">Congratulations on completing \nthis exercise, do you want to do \nany more breathing exercises?</string>
+    <string name="text_inhale_4s">inhale(4s)</string>
+    <string name="text_inhale_5s">inhale(5s)</string>
+    <string name="text_hold_7s">hold(7s)</string>
+    <string name="text_exhale_8s">exhale(8s)</string>
+    <string name="text_exhale_4s">exhale(4s)</string>
+    <string name="text_exhale_6s">exhale(6s)</string>
+    <string name="text_sleep_music">Sleep Music</string>
+    <string name="text_sleep_music_helps">Music helps you sleep more comfortably</string>
+
+
 </resources>
