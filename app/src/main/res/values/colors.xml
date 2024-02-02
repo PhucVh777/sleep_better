@@ -11,4 +11,5 @@
     <color name="color_bg_progressbar">#3A367F</color>
     <color name="color_bg_btn_cancel">#3C3881</color>
     <color name="color_tab_music_unselect">#484035</color>
+    <color name="color_tab_music_unselect_test">#A8906F</color>
 </resources>
